@@ -1,16 +1,7 @@
 import React from "react";
-import {
-  signOfTheCross,
-  actOfContrition,
-  apostlesCreed,
-  ourFather,
-  hailMary,
-  gloryBe,
-  saintMichael,
-  oMyJesus,
-} from "../PrayersArray.js";
+import { signOfTheCross } from "../../PrayersArray.js";
 
-function SignOfTheCross() {
+export default function SignOfTheCross() {
   return (
     <div>
       <h2>{signOfTheCross.name}</h2>
@@ -25,5 +16,3 @@ function SignOfTheCross() {
     </div>
   );
 }
-
-export default SignOfTheCross;
