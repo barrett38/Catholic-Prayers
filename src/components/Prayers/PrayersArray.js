@@ -1,6 +1,11 @@
 export const actOfContrition = {
   name: "Act of Contrition",
-  text: "O my God, I am heartily sorry for having offended You, \nand I detest all my sins because I dread the loss of heaven and the pains of hell, \nbut most of all because they offend You, my God, who are all good and deserving of all my love. \nI firmly resolve, with the help of Your grace, to confess my sins, to do penance, and to amend my life. Amen.",
+  text: "O my God, I am heartily sorry for having offended Thee, \nand I detest all my sins because I dread the loss of heaven and the pains of hell, \nbut most of all because they offend Thee, my God, who art all good and deserving of all my love. \nI firmly resolve, with the help of Thy grace, to confess my sins, to do penance, and to amend my life. Amen.",
+};
+
+export const serviteRosaryOffering = {
+  name: "Act of Contrition",
+  text: "My God, I offer You this Rosary for Your glory, so I can honor your Holy Mother, the Blessed Virgin, so I can share and meditate upon her suffering. I humbly beg you to give me true repentance for all my sins. Give me wisdom and humility, so that I may receive all the indulgences contained in this prayer. \n\nO my God, I am heartily sorry for having offended Thee, and I detest all my sins because I dread the loss of heaven and the pains of hell, but most of all because they offend Thee, my God, who art all good and deserving of all my love. I firmly resolve, with the help of Thy grace, to confess my sins, to do penance, and to amend my life. Amen.",
 };
 
 export const apostlesCreed = {
@@ -31,4 +36,9 @@ export const saintMichael = {
 export const oMyJesus = {
   name: "Pray O My Jesus",
   text: "O my Jesus, forgive us our sins, save us from the fires of hell, \nand lead all souls to Heaven, especially those in most need of Thy mercy. Amen.",
+};
+
+export const maryWithoutSin = {
+  name: "Mary Without Sin",
+  text: "Mary, who was conceived without sin and who suffered for us, pray for us who have recourse to thee.",
 };

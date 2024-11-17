@@ -1,12 +1,11 @@
 import React from "react";
-import { hailMary } from "./PrayersArray.js";
+import { serviteRosaryOffering } from "./PrayersArray.js";
 
-export default function HailMary() {
+export default function ServiteRosaryOffering() {
   return (
     <div>
-      {/* <h2>{hailMary.name}</h2> */}
       <p>
-        {hailMary.text.split("\n").map((line, index) => (
+        {serviteRosaryOffering.text.split("\n").map((line, index) => (
           <span key={index}>
             {line}
             <br />
