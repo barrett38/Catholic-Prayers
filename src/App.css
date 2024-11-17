@@ -1,35 +1,48 @@
+/* CSS inspired by the simplicity Yeezy.com as of 11/17/2024 */
+
 body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+  /* Flex Settings Above */
   background-color: white;
   font-family: "courier new", courier, monospace;
   margin: 0;
-  font-size: 16px; /* Set base font size */
+  font-size: 16px;
 }
 
 .App {
-  text-align: center;
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
+  align-content: stretch;
+  /* Flex Settings Above */
+  text-align: center;
   min-height: 100vh;
   padding: 20px;
   box-sizing: border-box;
-  position: relative; /* Ensure the pseudo-element is positioned relative to .App */
+  position: relative; /* Pseudo-element is relative */
 }
 
+/* Fade at Bottom of view */
 .App::after {
   content: "";
-  position: fixed; /* Fixed position to stay at the bottom of the viewport */
+  position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
-  height: 500px; /* Increase the height of the fade effect */
+  height: 300px; /* Height of the fade */
   background: linear-gradient(
     to bottom,
     rgba(255, 255, 255, 0),
     rgba(255, 255, 255, 1)
   );
-  pointer-events: none; /* Ensure the overlay doesn't interfere with interactions */
+  pointer-events: none; /* Ensure the overlay doesn't interfere */
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -38,28 +51,39 @@ body {
   }
 }
 
-.App-header {
-  background-color: white;
+p,
+h2 {
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Center vertically */
-  align-items: center; /* Center horizontally */
-  text-align: left; /* Left-align text */
-  max-width: 600px; /* Restrict text width */
-  margin: 0 auto; /* Center block horizontally */
-  padding: 20px 0; /* Add space above and below the header */
-  font-size: 1.25rem; /* Use relative units */
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+  /* Flex Settings Above */
+  background-color: white;
+  text-align: left; /* Align text to the left */
+  max-width: 600px;
+  margin: 20px auto;
+  font-size: 1rem; /* Use relative units */
   color: #050505;
 }
 
-p,
-h2 {
+h {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+  /* Flex Settings Above */
   background-color: white;
-  text-align: left; /* Keep text left-aligned */
-  max-width: 600px; /* Match the header width */
-  margin: 20px auto; /* Center text block and add vertical spacing */
-  font-size: 1.25rem; /* Use relative units */
+  text-align: left; /* Align text to the left */
+  max-width: 600px;
+  margin: 20px auto;
+  margin-top: 50px;
+  font-size: 1rem; /* Use relative units */
   color: #050505;
+  font-style: italic;
 }
 
 @keyframes App-logo-spin {
@@ -69,4 +93,29 @@ h2 {
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Intro Fade in and out */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.introText {
+  animation: fadeIn 2s ease-in-out;
+  opacity: 0;
+  animation-fill-mode: forwards; /* Keep the final state of the animation */
+}
+
+.content {
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+}
+
+.content.visible {
+  opacity: 1;
 }

@@ -28,9 +28,11 @@ function App() {
       <h2 className="introText">{introText}</h2>
       <div className={`content ${showContent ? "visible" : ""}`}>
         <p>{signOfTheCross}</p>
-        <h>Pray the Apostles' Creed once:</h>
         <ApostlesCreed />
         <OurFather />
+        <h2>
+          Pray the <HailMary /> twice
+        </h2>
         <HailMary />
         <GloryBe />
         <SaintMichael />

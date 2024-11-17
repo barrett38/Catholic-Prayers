@@ -1,8 +1,3 @@
-export const signOfTheCross = {
-  name: "Sign of the Cross",
-  text: "In the name of the Father, and of the Son, \nand of the Holy Spirit. Amen.",
-};
-
 export const actOfContrition = {
   name: "Act of Contrition",
   text: "O my God, I am heartily sorry for having offended You, \nand I detest all my sins because I dread the loss of heaven and the pains of hell, \nbut most of all because they offend You, my God, who are all good and deserving of all my love. \nI firmly resolve, with the help of Your grace, to confess my sins, to do penance, and to amend my life. Amen.",
@@ -34,6 +29,6 @@ export const saintMichael = {
 };
 
 export const oMyJesus = {
-  name: "O My Jesus",
+  name: "Pray O My Jesus",
   text: "O my Jesus, forgive us our sins, save us from the fires of hell, \nand lead all souls to Heaven, especially those in most need of Thy mercy. Amen.",
 };
