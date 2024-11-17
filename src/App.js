@@ -1,7 +1,6 @@
-import React from "react";
 import "./App.css";
 
-import SignOfTheCross from "./components/Prayers/SignOfTheCross";
+// import SignOfTheCross from "./components/Prayers/SignOfTheCross";
 import OurFather from "./components/Prayers/OurFather";
 import HailMary from "./components/Prayers/HailMary";
 import ActOfContrition from "./components/Prayers/ActOfContrition";
@@ -14,7 +13,7 @@ function App() {
   return (
     <div className="App">
       <ActOfContrition />
-      <SignOfTheCross />
+      {/* <SignOfTheCross /> */}
       <ApostlesCreed />
       <OurFather />
       <HailMary />

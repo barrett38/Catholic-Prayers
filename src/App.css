@@ -2,6 +2,7 @@ body {
   background-color: white;
   font-family: "courier new", courier, monospace;
   margin: 0;
+  font-size: 16px; /* Set base font size */
 }
 
 .App {
@@ -13,6 +14,22 @@ body {
   min-height: 100vh;
   padding: 20px;
   box-sizing: border-box;
+  position: relative; /* Ensure the pseudo-element is positioned relative to .App */
+}
+
+.App::after {
+  content: "";
+  position: fixed; /* Fixed position to stay at the bottom of the viewport */
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 500px; /* Increase the height of the fade effect */
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 1)
+  );
+  pointer-events: none; /* Ensure the overlay doesn't interfere with interactions */
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -41,7 +58,7 @@ h2 {
   text-align: left; /* Keep text left-aligned */
   max-width: 600px; /* Match the header width */
   margin: 20px auto; /* Center text block and add vertical spacing */
-  font-size: 15px;
+  font-size: 1.25rem; /* Use relative units */
   color: #050505;
 }
 
