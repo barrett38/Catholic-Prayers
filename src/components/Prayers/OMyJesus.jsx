@@ -1,5 +1,5 @@
 import React from "react";
-import { oMyJesus } from "../../PrayersArray.js";
+import { oMyJesus } from "./PrayersArray.js";
 
 export default function OMyJesus() {
   return (

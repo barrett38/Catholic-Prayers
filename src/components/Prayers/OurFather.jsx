@@ -1,5 +1,5 @@
 import React from "react";
-import { ourFather } from "../../PrayersArray.js";
+import { ourFather } from "./PrayersArray.js";
 
 export default function OurFather() {
   return (

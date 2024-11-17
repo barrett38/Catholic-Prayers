@@ -1,5 +1,5 @@
 import React from "react";
-import { gloryBe } from "../../PrayersArray.js";
+import { gloryBe } from "./PrayersArray.js";
 
 export default function GloryBe() {
   return (

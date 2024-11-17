@@ -13,8 +13,8 @@ import OMyJesus from "./components/Prayers/OMyJesus";
 function App() {
   return (
     <div className="App">
-      <SignOfTheCross />
       <ActOfContrition />
+      <SignOfTheCross />
       <ApostlesCreed />
       <OurFather />
       <HailMary />

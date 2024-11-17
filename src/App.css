@@ -1,15 +1,18 @@
-@font-face {
-  font-family: "Baskerville";
-  src: url(../public/fonts/Libre_Baskerville/LibreBaskerville-Regular.ttf);
-}
-
 body {
   background-color: white;
-  font-family: "Baskerville", serif;
+  font-family: "courier new", courier, monospace;
+  margin: 0;
 }
 
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -22,29 +25,23 @@ body {
   background-color: white;
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: stretch;
-  align-content: stretch;
-  /* Flex above */
-  margin-top: 200px;
-  margin-bottom: 38px;
-  font-size: calc(10px + 2vmin);
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  text-align: left; /* Left-align text */
+  max-width: 600px; /* Restrict text width */
+  margin: 0 auto; /* Center block horizontally */
+  padding: 20px 0; /* Add space above and below the header */
+  font-size: 1.25rem; /* Use relative units */
   color: #050505;
 }
 
-p {
+p,
+h2 {
   background-color: white;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: stretch;
-  align-content: stretch;
-  /* Flex above */
-  margin-top: 20px;
-  margin-bottom: 20px;
-  font-size: calc(10px + 2vmin);
+  text-align: left; /* Keep text left-aligned */
+  max-width: 600px; /* Match the header width */
+  margin: 20px auto; /* Center text block and add vertical spacing */
+  font-size: 15px;
   color: #050505;
 }
 
