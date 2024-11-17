@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: #fdf6eb;
+  background-color: white;
   font-family: "Baskerville", serif;
 }
 
@@ -19,7 +19,7 @@ body {
 }
 
 .App-header {
-  background-color: #fdf6eb;
+  background-color: white;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -34,7 +34,7 @@ body {
 }
 
 p {
-  background-color: #fdf6eb;
+  background-color: white;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
