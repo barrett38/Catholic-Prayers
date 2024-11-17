@@ -1,5 +1,5 @@
 import React from "react";
-import { apostlesCreed } from "./PrayersArray.js";
+import { apostlesCreed } from "../Prayers/PrayersArray.js";
 
 export default function ApostlesCreed() {
   return (

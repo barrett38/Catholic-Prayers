@@ -1,5 +1,5 @@
 import React from "react";
-import { maryWithoutSin } from "./PrayersArray.js";
+import { maryWithoutSin } from "../Prayers/PrayersArray.js";
 
 export default function MaryWithoutSin() {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import { actOfContrition } from "./PrayersArray.js";
+import { actOfContrition } from "../Prayers/PrayersArray.js";
 
 export default function ActOfContrition() {
   return (

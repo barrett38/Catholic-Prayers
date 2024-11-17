@@ -12,6 +12,8 @@ export default function ServiteRosaryOffering() {
           </span>
         ))}
       </p>
+      <h2>-- PRAY 3 HAIL MARY'S</h2>
+      <h2>-- PRAY 1 MOST MERCIFUL MOTHER</h2>
     </div>
   );
 }

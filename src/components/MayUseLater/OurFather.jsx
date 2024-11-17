@@ -1,12 +1,12 @@
 import React from "react";
-import { oMyJesus } from "./PrayersArray.js";
+import { ourFather } from "../Prayers/PrayersArray.js";
 
-export default function OMyJesus() {
+export default function OurFather() {
   return (
     <div>
-      <h2>{oMyJesus.name}</h2>
+      <h2>{ourFather.name}</h2>
       <p>
-        {oMyJesus.text.split("\n").map((line, index) => (
+        {ourFather.text.split("\n").map((line, index) => (
           <span key={index}>
             {line}
             <br />

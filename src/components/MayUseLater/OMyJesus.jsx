@@ -1,12 +1,12 @@
 import React from "react";
-import { gloryBe } from "./PrayersArray.js";
+import { oMyJesus } from "../Prayers/PrayersArray.js";
 
-export default function GloryBe() {
+export default function OMyJesus() {
   return (
     <div>
-      <h2>{gloryBe.name}</h2>
+      <h2>{oMyJesus.name}</h2>
       <p>
-        {gloryBe.text.split("\n").map((line, index) => (
+        {oMyJesus.text.split("\n").map((line, index) => (
           <span key={index}>
             {line}
             <br />

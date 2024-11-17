@@ -1,5 +1,5 @@
 import React from "react";
-import { signOfTheCross } from "./PrayersArray.js";
+import { signOfTheCross } from "../Prayers/PrayersArray.js";
 
 export default function SignOfTheCross() {
   return (

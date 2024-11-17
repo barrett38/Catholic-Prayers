@@ -1,5 +1,5 @@
 import React from "react";
-import { saintMichael } from "./PrayersArray.js";
+import { saintMichael } from "../Prayers/PrayersArray.js";
 
 export default function SaintMichael() {
   return (
