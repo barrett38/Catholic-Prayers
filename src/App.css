@@ -12,6 +12,7 @@ body {
   font-family: "courier new", courier, monospace;
   margin: 0;
   font-size: 16px;
+  font-weight: bold; /* Make all text bold */
 }
 
 .App {
@@ -66,6 +67,7 @@ h2 {
   margin: 20px auto;
   font-size: 1rem; /* Use relative units */
   color: #050505;
+  font-weight: bold; /* Make text bold */
 }
 
 h {
@@ -84,6 +86,7 @@ h {
   font-size: 1rem; /* Use relative units */
   color: #050505;
   font-style: italic;
+  font-weight: bold; /* Make text bold */
 }
 
 .custom-margin-bottom {
@@ -117,11 +120,13 @@ h {
   animation: fadeIn 2s ease-in-out;
   opacity: 0;
   animation-fill-mode: forwards; /* Keep the final state of the animation */
+  font-weight: bold; /* Make text bold */
 }
 
 .content {
   opacity: 0;
   transition: opacity 2s ease-in-out;
+  font-weight: bold; /* Make text bold */
 }
 
 .content.visible {

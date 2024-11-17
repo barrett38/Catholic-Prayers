@@ -1,14 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
 
-import OurFather from "./components/Prayers/OurFather";
-import HailMary from "./components/Prayers/HailMary";
-// import ActOfContrition from "./components/Prayers/ActOfContrition";
-import ApostlesCreed from "./components/Prayers/ApostlesCreed";
-import GloryBe from "./components/Prayers/GloryBe";
-import SaintMichael from "./components/Prayers/SaintMichael";
-import OMyJesus from "./components/Prayers/OMyJesus";
-import MaryWithoutSin from "./components/Prayers/MaryWithoutSin";
 import ServiteRosaryOffering from "./components/Prayers/ServiteRosaryOffering";
 
 const introText = "THE ONLY PRAYER YOU NEED IS THE SERVITE ROSARY...";
