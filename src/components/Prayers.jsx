@@ -1,19 +1,27 @@
 import React from "react";
-import prayers from "../PrayersArray.json";
+import {
+  signOfTheCross,
+  actOfContrition,
+  apostlesCreed,
+  ourFather,
+  hailMary,
+  gloryBe,
+  saintMichael,
+  oMyJesus,
+} from "../PrayersArray.js";
 
 function SignOfTheCross() {
-  const signOfTheCrossPrayer = prayers.find(
-    (prayer) => prayer.name === "Sign of the Cross"
-  );
-
   return (
     <div>
-      {signOfTheCrossPrayer && (
-        <div>
-          <h2>{signOfTheCrossPrayer.name}</h2>
-          <p>{signOfTheCrossPrayer.text}</p>
-        </div>
-      )}
+      <h2>{signOfTheCross.name}</h2>
+      <p>
+        {signOfTheCross.text.split("\n").map((line, index) => (
+          <span key={index}>
+            {line}
+            <br />
+          </span>
+        ))}
+      </p>
     </div>
   );
 }
