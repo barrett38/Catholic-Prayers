@@ -4,7 +4,8 @@ import { serviteRosaryOffering } from "./ServitePrayersArray.js";
 import "./prayers.css";
 
 const signOfTheCross1 = `Finally, we end with the Sign of the Cross: "In the name of the Father, and of the Son, and of the Holy Spirit. Amen."`;
-const introText = "THE ONLY PRAYER YOU NEED IS THE SERVITE ROSARY...";
+const introText =
+  "THE SERVITE ROSARY IS A DEVOTION TO THE SUFFERINGS OF CHRIST THROUGH THE HOLY MOTHER. THE ROSARY IS THE ONLY PRAYER YOU NEED...";
 const signOfTheCross = `Start with the Sign of the Cross: "In the name of the Father, and of the Son, and of the Holy Spirit. Amen."`;
 
 export default function ServiteRosaryOffering() {
@@ -18,7 +19,7 @@ export default function ServiteRosaryOffering() {
     // Delay showing content for 2 seconds
     const timer = setTimeout(() => {
       setShowContent(true);
-    }, 2000);
+    }, 3800);
 
     return () => clearTimeout(timer);
   }, []);
