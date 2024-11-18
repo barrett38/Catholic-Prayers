@@ -16,7 +16,7 @@ export function BeginningOfServite() {
 
 export function ServiteDecade() {
   return (
-    <div>
+    <>
       <h2 className="custom-margin-top">THE SERVITE DECADE IS AS FOLLOWS:</h2>
       <h2>-- DECLARE THE NEXT SORROW</h2>
       <h2>-- PRAY 1 OUR FATHER</h2>
@@ -31,10 +31,24 @@ export function ServiteDecade() {
       <p>The Fifth Sword of Sorrow: Mary Stands at the Foot of the Cross</p>
       <p>The Sixth Sword of Sorrow: Jesus is Taken Down From the Cross</p>
       <p>The Seventh Sword of Sorrow: The Burial of Jesus</p>
-    </div>
+    </>
   );
 }
 
 export function ClosingOfServite() {
-  return <div></div>;
+  return (
+    <div>
+      <h2 className="custom-margin-top">THE CLOSING PRAYERS:</h2>
+      <p>
+        PRAY ONCE: Queen of Martyrs, your heart suffered so much. I beg you, by
+        the merits of the tears you shed in these terrible and sorrowful times,
+        to obtain for me and all the sinners of the world the grace of complete
+        sincerity and repentance. Amen.
+      </p>
+      <p>
+        PRAY THRICE: Mary, who was conceived without sin and who suffered for
+        us, pray for us.
+      </p>
+    </div>
+  );
 }
