@@ -43,7 +43,7 @@
   /* Flex Settings Above */
   text-align: center;
   min-height: 100vh;
-  padding: 50px;
+  padding: 20px;
   box-sizing: border-box;
   position: relative; /* Pseudo-element is relative */
 }

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { serviteRosaryOffering } from "./ServitePrayersArray.js";
 import "./prayers.css";
 
@@ -42,7 +43,7 @@ export default function ServiteRosaryOffering() {
           <h2>-- PRAY 1 OUR FATHER</h2>
           <h2>-- PRAY 7 HAIL MARY'S</h2>
           <h2>-- PRAY 1 MOST MERCIFUL MOTHER</h2>
-          <h2>-- PRAY A DECADE FOR EVERY SORROW</h2>
+          <h2>-- PRAY 1 DECADES FOR EVERY SORROW</h2>
           <>
             <h2 className="custom-margin-top">THE SEVEN SORROWS OF MARY:</h2>
             <p>The First Sword of Sorrow: The Prophecy of Simeon</p>
@@ -69,8 +70,10 @@ export default function ServiteRosaryOffering() {
             </p>
           </>
           <p className="custom-margin-bottom">{signOfTheCross1}</p>
-          {/* <p className="custom-margin-top-of-footer">Today's Daily Rosary</p>
-          <p className="custom-margin-bottom-of-footer">Individual Prayers</p> */}
+          <p className="custom-margin-top-of-footer">
+            <Link to="/daily-rosary">Today's Daily Rosary</Link>
+          </p>
+          <p className="custom-margin-bottom-of-footer">Individual Prayers</p>
         </div>
       </div>
     </div>

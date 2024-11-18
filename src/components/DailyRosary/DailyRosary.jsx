@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { actOfContrition } from "./PrayersArray.js";
-import "./prayers.css";
+import { apostlesCreed } from "./PrayersArray.js";
 
 const signOfTheCross1 = `Finally, we end with the Sign of the Cross: "In the name of the Father, and of the Son, and of the Holy Spirit. Amen."`;
-const introText = "THE ONLY PRAYER YOU NEED IS THE DAILY ROSARY...";
+const introText = "THE ONLY PRAYER YOU NEED IS THE ROSARY...";
 const signOfTheCross = `Start with the Sign of the Cross: "In the name of the Father, and of the Son, and of the Holy Spirit. Amen."`;
 
-export default function ServiteRosaryOffering() {
+export default function DailyRosary() {
   const [showContent, setShowContent] = useState(false);
 
   useEffect(() => {
@@ -25,46 +24,47 @@ export default function ServiteRosaryOffering() {
           <p>{signOfTheCross}</p>
           <h2 className="custom-margin-top">PRAY THE APOSTLES'S CREED:</h2>
           <p>
-            {actOfContrition.text.split("\n").map((line, index) => (
+            {apostlesCreed.text.split("\n").map((line, index) => (
               <span key={index}>
                 {line}
                 <br />
               </span>
             ))}
           </p>
-          <h2>-- PRAY 3 HAIL MARY'S</h2>
-          <h2>-- PRAY 1 MOST MERCIFUL MOTHER</h2>
-          <h2 className="custom-margin-top">
-            THE SERVITE DECADE IS AS FOLLOWS:
-          </h2>
-          <h2>-- DECLARE THE NEXT SORROW</h2>
           <h2>-- PRAY 1 OUR FATHER</h2>
-          <h2>-- PRAY 7 HAIL MARY'S</h2>
-          <h2>-- PRAY 1 MOST MERCIFUL MOTHER</h2>
-          <h2>-- PRAY A DECADE FOR EVERY SORROW</h2>
+          <h2>-- PRAY 3 HAIL MARY'S</h2>
+          <h2>-- PRAY 1 GLORY BE</h2>
+          <h2 className="custom-margin-top">A DECADE IS AS FOLLOWS:</h2>
+          <h2>-- DECLARE THE NEXT MYSTERY</h2>
+          <h2>-- PRAY 1 OUR FATHER</h2>
+          <h2>-- PRAY 10 HAIL MARY'S</h2>
+          <h2>-- PRAY 1 GLORY BE</h2>
+          <h2>-- PRAY 1 O MY JESUS</h2>
+          <h2>-- PRAY 1 DECADE FOR EVERY MYSTERY</h2>
           <>
-            <h2 className="custom-margin-top">THE SEVEN SORROWS OF MARY:</h2>
-            <p>The First Sword of Sorrow: The Prophecy of Simeon</p>
-            <p>The Second Sword of Sorrow: The Flight Into Egypt</p>
-            <p>The Third Sword of Sorrow: The Loss of Jesus in the Temple</p>
-            <p>
-              The Fourth Sword of Sorrow: Mary Meets Jesus on His Way to Calvary
-            </p>
-            <p>
-              The Fifth Sword of Sorrow: Mary Stands at the Foot of the Cross
-            </p>
-            <p>The Sixth Sword of Sorrow: Jesus is Taken Down From the Cross</p>
-            <p>The Seventh Sword of Sorrow: The Burial of Jesus</p>
+            <h2 className="custom-margin-top">HERE ARE TODAY'S MYSTERIES:</h2>
+            <p>Mysteries will go here.</p>
             <h2 className="custom-margin-top">THE CLOSING PRAYERS:</h2>
             <p>
-              PRAY ONCE: Queen of Martyrs, your heart suffered so much. I beg
-              you, by the merits of the tears you shed in these terrible and
-              sorrowful times, to obtain for me and all the sinners of the world
-              the grace of complete sincerity and repentance. Amen.
+              Hail, holy Queen, Mother of mercy, our life, our sweetness, and
+              our hope. To thee do we cry, poor banished children of Eve; to
+              thee do we send up our sighs, mourning and weeping in this valley
+              of tears. Turn then, most gracious advocate, thine eyes of mercy
+              toward us, and after this, our exile, show unto us the blessed
+              fruit of thy womb, Jesus. O clement, O loving, O sweet Virgin
+              Mary.
             </p>
             <p>
-              PRAY THRICE: Mary, who was conceived without sin and who suffered
-              for us, pray for us.
+              Pray for us, O holy Mother of God, that we may be made worthy of
+              the promises of Christ.
+            </p>
+            <p>
+              O God, whose only begotten Son, by His life, death, and
+              resurrection, has purchased for us the rewards of eternal life;
+              grant, we beseech Thee, that meditating upon these mysteries of
+              the Most Holy Rosary of the Blessed Virgin Mary, we may imitate
+              what they contain and obtain what they promise, through the same
+              Christ our Lord. Amen.
             </p>
           </>
           <p className="custom-margin-bottom">{signOfTheCross1}</p>
