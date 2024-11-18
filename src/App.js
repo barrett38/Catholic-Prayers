@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 import ServiteRosaryOffering from "./components/ServiteRosary/ServiteRosaryOffering";
 import DailyRosary from "./components/DailyRosary/DailyRosary";
+import IndividualPrayers from "./components/IndividualPrayers/IndividualPrayers";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           }
         />
         <Route path="/daily-rosary" element={<DailyRosary />} />
+        <Route path="/individual-prayers" element={<IndividualPrayers />} />
       </Routes>
     </Router>
   );

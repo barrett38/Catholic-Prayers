@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { apostlesCreed } from "./PrayersArray.js";
+import Mysteries from "./Mysteries";
+import Footer from "../Footer.jsx";
 
 const signOfTheCross1 = `Finally, we end with the Sign of the Cross: "In the name of the Father, and of the Son, and of the Holy Spirit. Amen."`;
 const introText = "THE ONLY PRAYER YOU NEED IS THE ROSARY...";
@@ -50,7 +52,7 @@ export default function DailyRosary() {
           <h2>-- PRAY 1 DECADE FOR EVERY MYSTERY</h2>
           <>
             <h2 className="custom-margin-top">HERE ARE TODAY'S MYSTERIES:</h2>
-            <p>Mysteries will go here.</p>
+            <Mysteries />
             <h2 className="custom-margin-top">THE CLOSING PRAYERS:</h2>
             <p>
               Hail, holy Queen, Mother of mercy, our life, our sweetness, and
@@ -73,10 +75,10 @@ export default function DailyRosary() {
               what they contain and obtain what they promise, through the same
               Christ our Lord. Amen.
             </p>
+            <p>PRAY 1 PRAYER TO SAINT MICHAEL</p>
           </>
           <p className="custom-margin-bottom">{signOfTheCross1}</p>
-          <p className="custom-margin-top-of-footer">Today's Daily Rosary</p>
-          <p className="custom-margin-bottom-of-footer">Individual Prayers</p>
+          <Footer />
         </div>
       </div>
     </div>

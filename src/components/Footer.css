@@ -1,0 +1,30 @@
+.footer-link {
+  color: black;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.custom-margin-top-of-footer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+  /* Flex Settings Above */
+  margin-bottom: 10px;
+}
+
+.custom-margin-bottom-of-footer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+  /* Flex Settings Above */
+  margin-bottom: 300px;
+}

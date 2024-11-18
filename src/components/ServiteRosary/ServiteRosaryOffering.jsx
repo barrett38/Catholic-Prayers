@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import Footer from "../Footer.jsx";
 import { serviteRosaryOffering } from "./ServitePrayersArray.js";
 import "./prayers.css";
 
@@ -75,10 +75,7 @@ export default function ServiteRosaryOffering() {
             </p>
           </>
           <p className="custom-margin-bottom">{signOfTheCross1}</p>
-          <p className="custom-margin-top-of-footer">
-            <Link to="/daily-rosary">Today's Daily Rosary</Link>
-          </p>
-          <p className="custom-margin-bottom-of-footer">Individual Prayers</p>
+          <Footer />
         </div>
       </div>
     </div>
