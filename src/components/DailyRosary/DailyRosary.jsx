@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { apostlesCreed } from "./PrayersArray.js";
 import { useFadingEntry0 } from "../fadingEntry.js";
 import Mysteries from "./Mysteries";
-import Footer from "../Footer.jsx";
+import Footer from "../Footer/Footer.jsx";
 
 const signOfTheCross1 = `Finally, we end with the Sign of the Cross: "In the name of the Father, and of the Son, and of the Holy Spirit. Amen."`;
 const introText = "THE ONLY PRAYER YOU NEED IS THE ROSARY...";

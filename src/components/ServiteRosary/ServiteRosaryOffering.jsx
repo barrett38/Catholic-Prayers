@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { serviteRosaryOffering } from "./ServitePrayersArray.js";
 import { useFadingEntry0 } from "../fadingEntry.js";
-import Footer from "../Footer.jsx";
+import Footer from "../Footer/Footer.jsx";
 import "./prayers.css";
 
 const signOfTheCross1 = `Finally, we end with the Sign of the Cross: "In the name of the Father, and of the Son, and of the Holy Spirit. Amen."`;

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Footer from "../Footer.jsx";
+import Footer from "../Footer/Footer.jsx";
 import { saintMichael } from "../DailyRosary/PrayersArray.js";
 
 const prayers = {
