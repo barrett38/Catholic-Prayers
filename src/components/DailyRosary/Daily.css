@@ -1,0 +1,56 @@
+.hail-mary-container {
+  margin-top: 100px;
+  margin-left: 40px;
+}
+
+.custom-margin-top {
+  margin-top: 50px; /* Adjust the value as needed */
+}
+
+.custom-margin-bottom {
+  margin-bottom: 150px;
+}
+
+.custom-margin-top-of-footer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+  /* Flex Settings Above */
+  margin-bottom: 10px;
+}
+
+.custom-margin-bottom-of-footer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+  /* Flex Settings Above */
+  margin-bottom: 200px;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: stretch;
+  align-content: stretch;
+  /* Flex Settings Above */
+  text-align: center;
+  min-height: 100vh;
+  padding: 50px;
+  box-sizing: border-box;
+  position: relative; /* Pseudo-element is relative */
+}
+
+.introText {
+  animation: fadeIn 2s ease-in-out;
+  opacity: 0;
+  animation-fill-mode: forwards; /* Keep the final state of the animation */
+  font-weight: bold; /* Make text bold */
+}
