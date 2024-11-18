@@ -2,12 +2,7 @@ import React, { useState } from "react";
 import { useFadingEntry0 } from "../fadingEntry.js";
 import Footer from "../Footer/Footer.jsx";
 import "./prayers.css";
-import prayers from "../ListOfPrayers.js";
-
-const signOfTheCross1 = `Finally, we end with the Sign of the Cross: "In the name of the Father, and of the Son, and of the Holy Spirit. Amen."`;
-const introText =
-  "THE SERVITE ROSARY IS A DEVOTION TO THE SUFFERINGS OF CHRIST THROUGH THE HOLY MOTHER. THE ROSARY IS THE ONLY PRAYER YOU NEED...";
-const signOfTheCross = `Start with the Sign of the Cross: "In the name of the Father, and of the Son, and of the Holy Spirit. Amen."`;
+import { prayers, otherTexts } from "../ListOfPrayers.js";
 
 export default function ServiteRosaryOffering() {
   const [showContent, setShowContent] = useState(false);
@@ -16,9 +11,9 @@ export default function ServiteRosaryOffering() {
   return (
     <div>
       <div className="App">
-        <h2 className="introText">{introText}</h2>
+        <h2 className="introText">{otherTexts.introText}</h2>
         <div className={`content ${showContent ? "visible" : ""}`}>
-          <p>{signOfTheCross}</p>
+          <p>{otherTexts.endingSign}</p>
           <h2 className="custom-margin-top">OFFER THIS ROSARY TO GOD:</h2>
           <p>{prayers.serviteRosaryOffering}</p>
           <h2>-- PRAY 1 OUR FATHER</h2>
@@ -57,7 +52,7 @@ export default function ServiteRosaryOffering() {
               for us, pray for us.
             </p>
           </>
-          <p className="custom-margin-bottom">{signOfTheCross1}</p>
+          <p className="custom-margin-bottom">{otherTexts.beginningSign}</p>
           <Footer />
         </div>
       </div>
