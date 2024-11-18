@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { serviteRosaryOffering } from "./ServitePrayersArray.js";
 import { useFadingEntry0 } from "../fadingEntry.js";
 import Footer from "../Footer/Footer.jsx";
 import "./prayers.css";
+import prayers from "../ListOfPrayers.js";
 
 const signOfTheCross1 = `Finally, we end with the Sign of the Cross: "In the name of the Father, and of the Son, and of the Holy Spirit. Amen."`;
 const introText =
@@ -20,14 +20,7 @@ export default function ServiteRosaryOffering() {
         <div className={`content ${showContent ? "visible" : ""}`}>
           <p>{signOfTheCross}</p>
           <h2 className="custom-margin-top">OFFER THIS ROSARY TO GOD:</h2>
-          <p>
-            {serviteRosaryOffering.text.split("\n").map((line, index) => (
-              <span key={index}>
-                {line}
-                <br />
-              </span>
-            ))}
-          </p>
+          <p>{prayers.serviteRosaryOffering}</p>
           <h2>-- PRAY 1 OUR FATHER</h2>
           <h2>-- PRAY 3 HAIL MARY'S</h2>
           <h2>-- PRAY 1 MOST MERCIFUL MOTHER</h2>

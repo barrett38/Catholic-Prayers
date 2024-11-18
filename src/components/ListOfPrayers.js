@@ -10,6 +10,7 @@ const prayers = {
   mostMercifulMother: `Most merciful Mother, remind us always about the sorrows of your Son, Jesus. Amen.`,
   saintMichael: `Saint Michael the Archangel, defend us in battle. Be our protection against the wickedness and snares of the devil. May God rebuke him, we humbly pray; and do thou, O Prince of the heavenly host, by the power of God, thrust into hell Satan and all the wicked spirits who prowl about the world seeking the ruin of souls. Amen.`,
   rosaryClosing: `O God, whose only begotten Son, by His life, death, and resurrection, has purchased for us the rewards of eternal life; grant, we beseech Thee, that meditating upon these mysteries of the Most Holy Rosary of the Blessed Virgin Mary, we may imitate what they contain and obtain what they promise, through the same Christ our Lord. Amen.`,
+  serviteRosaryOffering: `My God, I offer You this Rosary for Your glory, so I can honor your Holy Mother, the Blessed Virgin, so I can share and meditate upon her suffering. I humbly beg you to give me true repentance for all my sins. Give me wisdom and humility, so that I may receive all the indulgences contained in this prayer. Amen. O my God, I am heartily sorry for having offended Thee, and I detest all my sins, because I dread the loss of heaven and the pains of hell; but most of all because they offend Thee, my God, who art all-good and deserving of all my love. I firmly resolve, with the help of Thy grace, to confess my sins, to do penance, and to amend my life. Amen.`,
 };
 
 export default prayers;
