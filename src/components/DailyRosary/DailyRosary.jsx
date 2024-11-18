@@ -8,6 +8,13 @@ const signOfTheCross = `Start with the Sign of the Cross: "In the name of the Fa
 export default function DailyRosary() {
   const [showContent, setShowContent] = useState(false);
 
+  // See variatiation in ServiteRosaryOffering.jsx
+  // Scroll to the top of the page when the component mounts
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  // Delay showing content for 2 seconds
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowContent(true);
