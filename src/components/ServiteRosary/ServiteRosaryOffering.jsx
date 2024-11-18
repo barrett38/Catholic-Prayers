@@ -4,6 +4,12 @@ import Footer from "../Footer/Footer.jsx";
 import "./prayers.css";
 import { prayers, otherTexts } from "../ListOfPrayers.js";
 
+import {
+  BeginningOfServite,
+  ServiteDecade,
+  ClosingOfServite,
+} from "./PartsOfServite.jsx";
+
 export default function ServiteRosaryOffering() {
   const [showContent, setShowContent] = useState(false);
   useFadingEntry0(setShowContent);
@@ -13,12 +19,9 @@ export default function ServiteRosaryOffering() {
       <div className="App">
         <h2 className="introText">{otherTexts.introText}</h2>
         <div className={`content ${showContent ? "visible" : ""}`}>
-          <p>{otherTexts.endingSign}</p>
-          <h2 className="custom-margin-top">OFFER THIS ROSARY TO GOD:</h2>
-          <p>{prayers.serviteRosaryOffering}</p>
-          <h2>-- PRAY 1 OUR FATHER</h2>
-          <h2>-- PRAY 3 HAIL MARY'S</h2>
-          <h2>-- PRAY 1 MOST MERCIFUL MOTHER</h2>
+          {/*  */}
+          <BeginningOfServite />
+          {/*  */}
           <h2 className="custom-margin-top">
             THE SERVITE DECADE IS AS FOLLOWS:
           </h2>
