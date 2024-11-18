@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { apostlesCreed } from "./PrayersArray.js";
+import { useFadingEntry0 } from "../fadingEntry.js";
 import Mysteries from "./Mysteries";
 import Footer from "../Footer.jsx";
 
@@ -9,21 +10,7 @@ const signOfTheCross = `Start with the Sign of the Cross: "In the name of the Fa
 
 export default function DailyRosary() {
   const [showContent, setShowContent] = useState(false);
-
-  // See variatiation in ServiteRosaryOffering.jsx
-  // Scroll to the top of the page when the component mounts
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
-  // Delay showing content for 2 seconds
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowContent(true);
-    }, 2000);
-
-    return () => clearTimeout(timer);
-  }, []);
+  useFadingEntry0(setShowContent);
 
   return (
     <div>
