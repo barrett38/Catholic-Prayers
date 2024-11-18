@@ -5,6 +5,7 @@ import "./Footer.css"; // Import the CSS file
 const Footer = () => {
   const location = useLocation();
   const isDailyRosaryPage = location.pathname === "/daily-rosary";
+  const isIndividualPrayersPage = location.pathname === "/individual-prayers";
 
   return (
     <div>
@@ -17,8 +18,11 @@ const Footer = () => {
         </Link>
       </p>
       <p className="custom-margin-bottom-of-footer">
-        <Link to="/individual-prayers" className="footer-link">
-          Individual Prayers
+        <Link
+          to={isIndividualPrayersPage ? "/" : "/individual-prayers"}
+          className="footer-link"
+        >
+          {isIndividualPrayersPage ? "Servite Rosary" : "Individual Prayers"}
         </Link>
       </p>
     </div>
