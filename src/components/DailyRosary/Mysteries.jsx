@@ -9,7 +9,7 @@ const Mysteries = () => {
     <div>
       <p>{title}</p>
       {list.map((mystery, index) => (
-        <p key={index}>{mystery}</p>
+        <p key={index}>-- {mystery}</p>
       ))}
     </div>
   );
