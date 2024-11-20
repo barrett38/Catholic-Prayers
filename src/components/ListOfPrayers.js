@@ -16,7 +16,7 @@ export const prayers = {
 export const otherTexts = {
   introText: `THE SERVITE ROSARY IS A DEVOTION TO THE SUFFERINGS OF CHRIST THROUGH THE HOLY MOTHER. THE ROSARY IS THE ONLY PRAYER YOU NEED...`,
   endingSign: `Finally, we end with the Sign of the Cross: "${prayers.signOfTheCross}"`,
-  beginningSign: `Start with the Sign of the Cross: "${prayers.signOfTheCross}"`,
+  beginningSign: `We first start with the Sign of the Cross: "${prayers.signOfTheCross}"`,
 };
 
 export default prayers;

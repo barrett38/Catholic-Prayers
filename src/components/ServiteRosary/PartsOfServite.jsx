@@ -4,7 +4,7 @@ import { prayers, otherTexts } from "../ListOfPrayers.js";
 export function BeginningOfServite() {
   return (
     <>
-      <p>{otherTexts.endingSign}</p>
+      <p>{otherTexts.beginningSign}</p>
       <h2 className="custom-margin-top">OFFER THIS ROSARY TO GOD:</h2>
       <p>{prayers.serviteRosaryOffering}</p>
       <h2>-- PRAY 1 OUR FATHER</h2>
@@ -49,6 +49,7 @@ export function ClosingOfServite() {
         PRAY THRICE: Mary, who was conceived without sin and who suffered for
         us, pray for us.
       </p>
+      <p>{otherTexts.endingSign}</p>
     </div>
   );
 }

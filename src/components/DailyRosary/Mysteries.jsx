@@ -3,11 +3,12 @@ import React from "react";
 import { getMysteries } from "./getMysteries";
 
 const Mysteries = () => {
-  const mysteries = getMysteries();
+  const { title, list } = getMysteries();
 
   return (
     <div>
-      {mysteries.map((mystery, index) => (
+      <p>{title}</p>
+      {list.map((mystery, index) => (
         <p key={index}>{mystery}</p>
       ))}
     </div>

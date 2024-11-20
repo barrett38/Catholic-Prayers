@@ -25,10 +25,9 @@ export function DailyDecade() {
       <h2>-- PRAY 1 GLORY BE</h2>
       <h2>-- PRAY 1 O MY JESUS</h2>
       <h2>-- PRAY 1 DECADE FOR EVERY MYSTERY</h2>
-      <>
-        <h2 className="custom-margin-top">TODAY'S MYSTERIES ARE:</h2>
+      <h2>
         <Mysteries />
-      </>
+      </h2>
     </div>
   );
 }
